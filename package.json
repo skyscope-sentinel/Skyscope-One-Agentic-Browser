@@ -1,0 +1,23 @@
+{
+  "name": "skyscope-one",
+  "private": true,
+  "version": "0.1.0",
+  "packageManager": "pnpm@9.0.0",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "pnpm -C apps/desktop dev",
+    "build": "pnpm -C apps/desktop build",
+    "dist:mac": "pnpm -C apps/desktop dist:mac",
+    "lint": "eslint .",
+    "typecheck": "tsc -b"
+  },
+  "devDependencies": {
+    "eslint": "^9.0.0",
+    "@typescript-eslint/parser": "^7.0.0",
+    "@typescript-eslint/eslint-plugin": "^7.0.0",
+    "prettier": "^3.2.0"
+  }
+}

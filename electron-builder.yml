@@ -1,0 +1,36 @@
+appId: com.skyscope.one
+productName: Skyscope One
+directories:
+  output: dist
+  buildResources: build
+files:
+  - "out/**"
+  - "!**/node_modules/.cache/**"
+mac:
+  category: public.app-category.productivity
+  target:
+    - target: dmg
+      arch:
+        - universal
+  icon: build/icon-mac.png
+  hardenedRuntime: false
+  gatekeeperAssess: false
+  entitlements: build/entitlements.mac.plist
+  entitlementsInherit: build/entitlements.mac.plist
+afterSign: null
+asar: true
+artifactName: "Skyscope-One-${version}-mac-${arch}.${ext}"
+dmg:
+  backgroundColor: "#0b0b0c"
+  iconSize: 128
+  window:
+    width: 600
+    height: 400
+  contents:
+    - x: 130
+      y: 200
+      type: file
+    - x: 470
+      y: 200
+      type: link
+      path: /Applications
