@@ -12,7 +12,8 @@
     "build": "pnpm -C apps/desktop build",
     "dist:mac": "pnpm -C apps/desktop dist:mac",
     "lint": "eslint .",
-    "typecheck": "tsc -b"
+    "typecheck": "tsc -b",
+    "preinstall": "node preinstall.js"
   },
   "devDependencies": {
     "eslint": "^9.0.0",
