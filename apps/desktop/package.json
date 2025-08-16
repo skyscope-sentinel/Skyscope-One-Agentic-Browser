@@ -1,0 +1,43 @@
+{
+  "name": "@skyscope/desktop",
+  "version": "0.1.0",
+  "main": "out/main/index.js",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "dev": "electron-vite dev",
+    "build": "electron-vite build",
+    "start": "electron-vite preview",
+    "gen:icons": "tsx scripts/gen-icons.ts",
+    "dist:mac": "electron-builder --mac --universal --publish never"
+  },
+  "dependencies": {
+    "electron": "^30.0.0",
+    "keytar": "^7.9.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "zod": "^3.23.8",
+    "axios": "^1.7.2",
+    "uuid": "^9.0.1",
+    "@skyscope/agent-core": "workspace:*",
+    "@skyscope/automation": "workspace:*",
+    "@skyscope/models": "workspace:*",
+    "@skyscope/oauth": "workspace:*"
+  },
+  "devDependencies": {
+    "electron-builder": "^24.13.3",
+    "electron-vite": "^2.3.0",
+    "typescript": "^5.5.4",
+    "tsx": "^4.19.0",
+    "tailwindcss": "^3.4.7",
+    "postcss": "^8.4.40",
+    "autoprefixer": "^10.4.20",
+    "@types/node": "^20.14.10",
+    "@types/react": "^18.3.5",
+    "@types/react-dom": "^18.3.0",
+    "sharp": "^0.33.4"
+    ,
+    "@vitejs/plugin-react": "^4.3.1",
+    "vite": "^5.4.0"
+  }
+}
