@@ -12,13 +12,13 @@
     "dist:mac": "electron-builder --mac --universal --publish never"
   },
   "dependencies": {
-    "electron": "^30.0.0",
+    "electron": "^41.3.0",
     "keytar": "^7.9.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "zod": "^3.23.8",
     "axios": "^1.7.2",
-    "uuid": "^9.0.1",
+    "uuid": "^14.0.0",
     "@skyscope/agent-core": "workspace:*",
     "@skyscope/automation": "workspace:*",
     "@skyscope/models": "workspace:*",
@@ -38,6 +38,6 @@
     "sharp": "^0.33.4"
     ,
     "@vitejs/plugin-react": "^4.3.1",
-    "vite": "^5.4.0"
+    "vite": "^8.0.9"
   }
 }
